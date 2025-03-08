@@ -1,0 +1,36 @@
+### ADD Bank Account
+POST http://localhost:6050//
+Content-Type: application/json
+
+{
+    "username": "rajkumar",
+    "accountNumber": 1234567,
+    "accountBalance": 60080,
+    "accountStatus": "active"
+}
+
+### GET ALL ACCOUNT
+GET http://localhost:6050/
+
+### GET ACCOUNT BY ID
+GET http://localhost:6060/67a726213eee563897728e95
+
+### UPDATE ACCOUNT BY ID
+PUT http://localhost:6060/67a726213eee563897728e95
+Content-Type: application/json
+
+{
+  "username": "sumanth",
+  "accountNumber": 123456789,
+  "accountBalance": 1000,
+  "__v": 0
+}
+
+### DELETE ACCOUNT BY ID
+DELETE http://localhost:6060/67a726213eee563897728e95
+
+### GET ACCOUNT BY ACCOUNT NUMBER
+GET http://localhost:6060/accountNumber/123456789
+
+### GET ACCOUNT BY USERNAME
+GET http://localhost:6060/username/sumanth

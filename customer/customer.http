@@ -1,0 +1,57 @@
+### Create a Customer
+POST http://localhost:6000/
+Content-Type: application/json
+
+{
+  "fullname": "doctor",
+  "username": "rajkumar",
+  "password": "24526",
+  "aadhaar": 9949337385,
+  "pan": "Rmpo85046",
+  "contact": 9785246058,
+  "email": "doctor@gmail.com"
+}
+
+
+###############################
+
+### Get All Customers
+GET http://localhost:6000/
+
+################################################
+
+### Get Customer by ID
+
+GET http://localhost:8050/
+
+###################################################
+
+### Update Customer by ID
+PUT http://localhost:8050/
+Content-Type: application/json
+
+{
+  "_id": "67a722818e77f2b469796926",
+  "fullname": "s3",
+  "username": "prasad",
+  "password": "1234568",
+  "aadhaar": 1234567890,
+  "pan": "prashu",
+  "contact": 99493452,
+  "email": "prasad@gmail.com",
+  "__v": 0
+}
+
+##############################################
+
+### Delete Customer by ID
+DELETE http://localhost:8050/67a722818e77f2b469796926
+
+####################################################
+### GET CUSTOMER BY AADHAR 
+
+GET http://localhost:8050/aadhar/9876
+
+### GET CUSTOMER BY USERNAME 
+
+GET http://localhost:8050/username/teddy

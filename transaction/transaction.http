@@ -1,0 +1,32 @@
+### ADD TRANSACTION
+POST http://localhost:7000/
+Content-Type: application/json
+
+{
+    "username": "sandy",
+    "transactionId": "TRX123485",
+    "transactionDate": "2025-02-09",
+    "transactionFrom": "a2",
+    "transactionTo": "a1"
+}
+
+### GET ALL TRANSACTIONS
+GET http://localhost:7000/
+
+### GET TRANSACTION BY ID
+GET http://localhost:7000/67a75fce85e0835adf2bfddd
+
+### UPDATE TRANSACTION BY ID
+PUT http://localhost:7000/67a75fce85e0835adf2bfddd
+Content-Type: application/json
+
+{
+    "username": "sumanth",
+    "transactionId": "TRX123485",
+    "transactionDate": "2025-02-09",
+    "transactionFrom": "a2",
+    "transactionTo": "a1"
+}
+
+### DELETE TRANSACTION BY ID
+DELETE http://localhost:7000/
